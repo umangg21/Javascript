@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+textarea {
+  border: 1px solid rgb(61, 150, 252);
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+}
+
+textarea:focus-within {
+  border: 3px solid rgb(61, 150, 252);
+}
+
+/* 
+[type="text"]:active,
+[type="text"]:focus {
+  outline: 0;
+  border: 2px solid #007bff;
+} */
+
+button {
+  color: white;
+  background-color: rgb(61, 150, 252);
+  padding: 0.2rem;
+  outline: none;
+  border-radius: 4px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 5px;
+}
+ul li ul {
+  padding-left: 20px;
+}
+
+ul li ul li ul {
+  border-left: 1px solid red;
+}
+ul li ul li div {
+  border-left: 1px solid red;
+}
+
+li span {
+  display: block;
+  padding: 5px;
+}
+
+li span:hover {
+  background: rgba(179, 215, 255, 0.52);
+}
+
+li span:focus {
+  outline: 0;
+  border: 2px solid #007bff;
+  background: rgba(179, 207, 255, 0.52);
+}
+
+li ul li * {
+  margin-left: 10px;
+}
+
+li button {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+li textarea {
+  margin-top: 5px;
+  margin-bottom: -5px;
+  position: relative;
+}
