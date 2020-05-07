@@ -1,6 +1,6 @@
-# Nested Comments!
+# Food Order!
 
-**Hosted at** : [**https://umangg21.github.io/Javascript/Apps/Food%20Order/index.html**](https://umangg21.github.io/Javascript/Apps/Food%20Order/index.html)
+**Hosted at** : [**https://umangg21.github.io/Javascript/Apps/Food%20Order/index.html**](https://umangg21.github.io/Javascript/Apps/Food%20Order/index.html){:target="_blank"}
 
 
 A Food Order/ Restaurant Search App built in vanilla Javascript.
@@ -14,6 +14,6 @@ This app is having following functionalities.
 
 ### To run the app use following step.
 
- 1. Install **[Serve](https://www.npmjs.com/package/serve)** using `npm i serve`. 
+ 1. Install [**Serve**](https://www.npmjs.com/package/serve){:target="_blank"} using `npm i serve`. 
  2. After installing serve run `serve` command at root diractory of app. 
  3. App will be host at http://localhost:5000
