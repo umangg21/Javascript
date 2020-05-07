@@ -1,22 +1,18 @@
 // Simple Prototype for Array.filter
 
 
-if (!Array.prototype.filter) {
+if (Array.prototype.filter === undefined) {
+    Array.prototype.filter = function (fn) {
 
-    Array.prototype.filter = function (fun) {
         var currentArray = this
-        var currentArrayLength = currentArray.length
+        var newArray = [];
 
-        var newArray = []
-
-        for (index = 0; index < currentArrayLength; index++) {
-            var curentElement = currentArray[index]
-
-            if(fun(curentElement)){
-                newArray.push(curentElement)
+        for (var index = 0; index < currentArray.length; index++) {
+            if (fn(currentArray[index])) {
+                newArray.push(currentArray[index]);
             }
         }
 
-        return newArray
-    }
+        return newArray;
+    };
 }

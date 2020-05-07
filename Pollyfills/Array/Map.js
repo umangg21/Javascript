@@ -1,21 +1,18 @@
 // Simple Prototype for Array.map
 
 
-if (!Array.prototype.map) {
+if (Array.prototype.map === undefined) {
+    Array.prototype.map = function (fn) {
 
-    Array.prototype.map = function (fun) {
         var currentArray = this
-        var currentArrayLength = currentArray.length
+        var newArray = [];
 
-        var newArray = []
+        for (var index = 0; index < currentArray.length; index++) {
 
-        for (index = 0; index < currentArrayLength; index++) {
-            var curentElement = currentArray[index]
-            var newElement = fun(curentElement)
-
-            newArray.push(newElement)
+            var newElement = fn(currentArray[index])
+            newArray.push(newElement);
         }
 
-        return newArray
-    }
+        return newArray;
+    };
 }
