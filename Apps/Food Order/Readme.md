@@ -11,6 +11,6 @@ This app is having following functionalities.
 
 ### To run the app use following step.
 
- 1. Install [Serve]([https://www.npmjs.com/package/serve](https://www.npmjs.com/package/serve)) using `npm i serve`. 
+ 1. Install **[Serve](https://www.npmjs.com/package/serve)** using `npm i serve`. 
  2. After installing serve run `serve` command at root diractory of app. 
  3. App will be host at http://localhost:5000
