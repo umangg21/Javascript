@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    </link>
+</head>
+
+<body>
+
+    <div id="root">
+        <div>
+            <label for="searchBox">Search</label>
+            <input id="searchBox" type="text" value="" onkeyup="search(value)"></input>
+        </div>
+
+        <div>
+            <label for="sortDropdown">Sort By</label>
+            <select id="sortDropdown" title="Sort By" onchange="getFilteredResult()">
+                <option value="">Select</option>
+                <option value="Rating">Rating</option>
+                <option value="ETA">ETA</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="filterDropdown">Filter</label>
+            <select id="filterDropdown" title="Sort By" onchange="getFilteredResult()">
+                <option value="">Select</option>
+            </select>
+
+        </div>
+
+        <ol id="hotelList" class="parentOrderList">
+        </ol>
+
+        <p id="notification"></p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

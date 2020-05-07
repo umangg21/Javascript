@@ -1,0 +1,52 @@
+html {
+  font-family: sans-serif;
+}
+
+.parentOrderList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0px;
+  justify-content: center;
+}
+
+.listItem {
+  max-width: 230px;
+  margin: 10px;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+#filterDropdown,
+#sortDropdown {
+  font-size: 14px;
+  height: 30px;
+  min-width: 80px;
+  margin-top: 10px;
+}
+
+#filterDropdown:focus,
+#sortDropdown:focus {
+  outline: none;
+}
+
+option {
+  font-size: 14px;
+}
+
+input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  border-radius: 8px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.yellow {
+    background-color: yellow;
+}
